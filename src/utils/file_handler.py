@@ -22,8 +22,10 @@ def select_and_copy_pdf():
         shutil.copy2(file_path, destination)
 
         print(f"Dosya kütüphaneye başarıyla eklendi: {file_name}")
+        return destination ,file_name
     else:
         print("Dosya seçilmedi.")
+        return None, None
 
 
 if __name__ == "__main__":
